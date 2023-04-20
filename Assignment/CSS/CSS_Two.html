@@ -10,7 +10,11 @@
         header{
             background: white;
             box-shadow: 1px 2px 3px 2px;
-            position: relative;
+            position: fixed;
+            border: solid black;
+            top: 0;
+            width: 1600px;
+            z-index: 3;
         }
         header>img{
             height: 50px;
@@ -39,9 +43,14 @@
         main>section>section>div{
             height: 660px;
             width: 300px;
-            background-color: purple;
+            background-color: rebeccapurple;
             border: solid black 1px;
             position: absolute;
+        }
+
+        body>main{
+            margin-top: 50px;
+            z-index: 4;
         }
 
         #sec1{
@@ -56,7 +65,6 @@
             width: 300px;
             position: absolute;
             left: 330px;
-            border: solid black 1px;
         }
 
         #div2>img{
@@ -64,7 +72,6 @@
             width: 300px;
             position: absolute;
             left: 700px;
-            border: solid black 1px;
         }
 
         #div3>img{
@@ -72,7 +79,6 @@
             width: 300px;
             position: absolute;
             left: 1100px;
-            border: solid black 1px;
         }
         ul.no-bullets li{
             list-style: none;
@@ -82,8 +88,7 @@
             position: absolute;
             border: 1px solid black;
             width: 100%;
-            top: 92.5
-            %;
+            top: 92.5%;
             text-align: center;
         }
         main>section>section>div>nav>ul>li{
@@ -93,7 +98,16 @@
         main>section>section>div>nav>ul>li>a{
             color: white;
         }
-
+        #chatbox{
+            width: 200px;
+            height: 50px;
+            background-color: cornflowerblue;
+            text-align: center;
+            color: white;
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
 
     </style>
 
@@ -125,9 +139,9 @@
 
             </div>
         </section>
-        <div id="div1"><img src="Assets/e946026df22acfc533f37e95634cdf3e.jpg"></div>
-        <div id="div2"><img src="Assets/e946026df22acfc533f37e95634cdf3e.jpg"></div>
-        <div id="div3"><img src="Assets/e946026df22acfc533f37e95634cdf3e.jpg"></div>
+        <div id="div1"><img src="Assets/c89fefe41a8c0ebd944cf88ca60381e8.gif"></div>
+        <div id="div2"><img src="Assets/c89fefe41a8c0ebd944cf88ca60381e8.gif"></div>
+        <div id="div3"><img src="Assets/c89fefe41a8c0ebd944cf88ca60381e8.gif"></div>
         <section id="sec1">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis debitis fugit quidem sapiente sunt.
                 Accusantium ad dicta, earum facilis iusto modi nam numquam odit officiis recusandae reprehenderit
@@ -143,6 +157,7 @@
             <p>Aliquam atque enim, hic in minus mollitia numquam repellat unde vitae voluptates. Alias aliquid commodi
                 consequuntur cumque deleniti doloremque, earum, exercitationem itaque laboriosam maxime possimus, quaerat
                 quam recusandae sequi voluptatibus.</p>
+
         </section>
         <!--    <nav>-->
         <!--        <ul>-->
@@ -155,8 +170,10 @@
 
     </section>
 </main>
+
 <footer>
     <p>Developed By IJSE</p>
 </footer>
+<div id="chatbox"></div>
 </body>
 </html>
