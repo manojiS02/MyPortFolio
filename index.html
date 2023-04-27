@@ -1,209 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>My Web Page | Title</title>
     <meta charset="UTF-8">
-    <!--    <base href="localhost">-->
-    <meta name="keywords" content="IJSE, GDSE, Sri Lanka, CMJD, RWAD">
-    <meta name="description" content="This is for testing my web">
-    <meta name="author" content="Manoji Salakshana">
-    <meta name="owner" content="Manoji Salaskahana">
-    <meta name="theme-color" content="blue">
+    <title>Assignment 1 - Case Two</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="../../normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        header{
+            background: gray;
+            box-shadow: 0px -1px 8px 2px #1c1717e8;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            height: 65px;
+            z-index: 20;
+            font-family: 'Poppins', sans-serif;
+            font-size: 19px;
+        }
+
+        header > nav {
+            position: absolute;
+            right: 150px;
+            top: 0;
+        }
+
+        header > div{
+            padding: 0px;
+            padding-left: 200px;
+            font-size: 25px;
+        }
+
+        header > nav > ul > li {
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px;
+            font-family: 'Poppins', sans-serif;
+            color: rgba(46, 41, 41, 0.96);
+            font-size: 19px;
+        }
+
+        header > nav >ul > li > a {
+            color: rgba(46, 41, 41, 0.96);
+            text-decoration: none;
+        }
+
+        header > nav > ul > li > a:hover{
+            color: rebeccapurple;
+        }
+
+        header > nav > ul > li > a::after{
+            content: '';
+            display: block;
+            width: 0;
+            height: 5px;
+            background-color: rebeccapurple;
+            transition: width 0.3s;
+        }
+
+        header > nav > ul > li > a:hover::after{
+            width: 100%;
+            transition: width 0.2s;
+        }
+
+        main{
+            background-color: darkgray;
+        }
+        main>section>img{
+            width: 900px;
+        }
+
+
+    </style>
+
 </head>
-
-<body bgcolor="#D9D9D9">
-
+<body>
 <header>
-    <!--    <font color="#8a2be2">-->
-    <!--        <h3 align="left">My PortFolio</h3>-->
-    <!--    </font>-->
-
-    <table width="100%" height="50px" border="0" align="right" bgcolor="#d3d3d3">
-        <tr>
-            <td width="10%">
-                <font color="#8a2be2">
-                    <h3 align="left"><b><font size="6">My PortFolio</font></b></h3>
-                </font>
-            </td>
-            <td width="10%"></td>
-            <td width="10%"></td>
-
-            <td width="8%" align="right"><nav><font size="5">Home</font></nav></td>
-            <td width="8%" align="right"><nav><a href="#about"><font size="5">About</font></a></nav></td>
-            <td width="8%" align="right"><nav><a href="#education"><font size="5">Education</font></a></nav></td>
-            <td width="8%" align="right"><nav><a href="#skills"><font size="5">Skills</font></a></nav></td>
-            <td width="8%" align="right"><nav><a href="#projects"><font size="5">Projects</font></a></nav></td>
-            <td width="8%" align="right"><nav><a href="#contact"><font size="5">Contact</font></a></nav></td>
-        </tr>
-    </table>
-
-    <!--    <nav>Home</nav>-->
-    <!--    <nav><a href="#about">About</a></nav>-->
-    <!--    <nav><a href="#education">Education</a></nav>-->
-    <!--    <nav><a href="#skills">Skills</a></nav>-->
-    <!--    <nav><a href="#projects">Projects</a></nav>-->
-    <!--    <nav><a href="#contact">Contact</a></nav>-->
-    <!--    <br>-->
-    <!--    <hr>-->
-
-
+    <nav>
+        <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> About</a></li>
+            <li><a href="#"> Education</a></li>
+            <li><a href="#"> Skills</a></li>
+            <li><a href="#"> Projects</a></li>
+            <li><a href="#"> Contact</a></li>
+        </ul>
+    </nav>
 </header>
-
 <main>
     <section>
-        <article>
-            <aside>
-                <img src="Assets/img/group1.png" alt="Couldn't load image" width="750" height="670" align="left"><br>
-                <br>
-            </aside>
-            <br><br><br><br><br><br><br><br>
-            <br>
-            <font face="Josefin Sans" size="100" color="#8a2be2"><b>Hello<br>I'm Manoji</b></font>
-
-            <h4>I am not a product of my circumstance.I am <br> a product of my decision<br></h4>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </article>
+        <img src="Assets/img/group1.png" alt="Couldn't load image">
     </section>
-
-    <section>
-        <section>
-            <font color="#8a2be2">
-                <h1 align="center"><dfn id="about"><font size="7"><b>About me</b></font></dfn></h1>
-            </font>
-
-            <p align="center">
-                <img src="Assets/img/Working1.png">
-            </p>
-
-            <table border="0" align="right" cellpadding="5">
-                <tr><td><a href="https://www.instagram.com/manojisalakshana/" target="_blank"><img src="Assets/img/instagram.png" align="right"></a></td></tr>
-                <tr><td><a href="https://www.facebook.com/manoji.salakshana.1" target="_blank"><img src="Assets/img/facebook.png" align="right"></a></td></tr>
-                <tr><td><a href="https://www.linkedin.com/in/manoji-salakshana-969ab01b7/" target="_blank"><img src="Assets/img/linkedin.png" align="right"></a></td></tr>
-                <tr><td><img src="Assets/img/twitter.png" align="right"></td></tr>
-                <tr><td><a href="https://github.com/manojiS02" target="_blank"><img src="Assets/img/github.png" align="right"></a></td></tr>
-            </table>
-
-            <article>
-                <b><font face="Josefin Sans" size="4"><font color="#8a2be2">M</font>y name is Manoji Salakshana. <font color="#8a2be2">I</font>'m first year student in <br>
-                    IJSE(Institue of Java Software Engineering). <font color="#8a2be2">I</font>'m currently <br>
-                    more about software engineering, web <br>
-                    development and internet technologies. <font color="#8a2be2">I</font> like to improve my <br>
-                    with working on projects. <font color="#8a2be2">A</font>lso I have knowledge about <br>
-                    web application designing, UI/Ux design and javaFX.</font></b>
-            </article>
-            <article>
-                <h4>Name : U.K.Manoji Salakshana </h4>
-                <h4>Age : 21 </h4>
-                <h4>City : Galle </h4>
-                <h4>Study : Institute of Java Software Engineering </h4>
-                <h4>Degree : Graduate Diploma in Software Engineering.</h4>
-            </article>
-        </section>
-
-    </section>
-
-    <section>
-        <article>
-            <font color="#8a2be2">
-                <h1 align="center"><dfn id="education"><font size="7"><b>Education</b></font></dfn></h1>
-            </font>
-
-            <p align="center">
-                <img src="Assets/img/School1.png">
-            </p>
-
-            <table width="20%" height="60px" bgcolor="6103BE" border="0" align="left"><tr><td align="center"><font color="#f8f8ff" size="5">School Study</font></td></tr></table>
-            <table width="40%" height="70px" bgcolor="black" border="0" cellpadding="20"><tr><td align="left"><font color="#f8f8ff" size="5">(2007-2020)<br>Southlands college, Galle.</font></td></tr></table><br>
-
-            <table width="20%" height="60px" bgcolor="6103BE" border="0" align="left"><tr><td align="center"><font color="#f8f8ff" size="5">School Study</font></td></tr></table>
-            <table width="40%" height="70px" bgcolor="black" border="0" cellpadding="20"><tr><td align="left"><font color="#f8f8ff" size="5">O/L(2018)<br>Southlands college, Galle.</font></td></tr></table><br>
-
-            <table width="20%" height="60px" bgcolor="6103BE" border="0" align="left"><tr><td align="center"><font color="#f8f8ff" size="5">School Study</font></td></tr></table>
-            <table width="40%" height="70px" bgcolor="black" border="0" cellpadding="20"><tr><td align="left"><font color="#f8f8ff" size="5">A/L(2020)<br>Southlands college, Galle.</font></td></tr></table><br>
-
-            <table width="20%" height="60px" bgcolor="6103BE" border="0" align="left"><tr><td align="center"><font color="#f8f8ff" size="5">Advanced Certificate in English Language</font></td></tr></table>
-            <table width="40%" height="70px" bgcolor="black" border="0" cellpadding="20"><tr><td align="left"><font color="#f8f8ff" size="5">2021<br>NIBM - National Institute of Business Management</font></td></tr></table><br>
-
-            <table width="20%" height="60px" bgcolor="6103BE" border="0" align="left"><tr><td align="center"><font color="#f8f8ff" size="5">Graduate Diploma in Software Engineering</font></td></tr></table>
-            <table width="40%" height="70px" bgcolor="black" border="0" cellpadding="20"><tr><td align="left"><font color="#f8f8ff" size="5">2022 present<br>IJSE - Institute of Java Software Engineering</font></td></tr></table><br>
-        </article>
-    </section>
-
-    <section>
-        <font color="#8a2be2">
-            <h1 align="center"><dfn id="skills"><font size="7"><b>Skills</b></font></dfn></h1>
-        </font>
-
-        <section>
-            <font color="#8a2be2" size="5">
-                <h3>Programminng Languages I Use</h3>
-            </font>
-
-            <table border="0" align="center">
-                <tr>
-                    <td><img src="Assets/img/html.png"></td>
-                    <td><img src="Assets/img/css.png"></td>
-                    <td><img src="Assets/img/java%201.png"></td>
-                    <td><img src="Assets/img/python%201.png"></td>
-                    <td><img src="Assets/img/sql%201.png"></td>
-                </tr>
-            </table>
-
-        </section>
-        <section>
-            <font color="#8a2be2" size="5">
-                <h3>Programming Softwares I Use</h3>
-            </font>
-            <table border="0" align="center">
-                <tr>
-                    <td><img src="Assets/img/hibernate%201.png"></td>
-                    <td><img src="Assets/img/intellij%201.png"></td>
-                    <td><img src="Assets/img/NetBeans_Logo%201.png"></td>
-                    <td><img src="Assets/img/sql%202.png"></td>
-                </tr>
-            </table>
-
-        </section>
-    </section>
-
-    <section>
-        <article>
-            <font color="#8a2be2">
-                <h1 align="center"><dfn id="projects"><font size="7"><b>Projects</b></font></dfn></h1>
-            </font>
-
-        </article>
-    </section>
-
-    <footer>
-        <section>
-            <font color="#8a2be2">
-                <h1 align="left"><dfn id="contact"><font size="7"><b>Let's work<br>together</b></font></dfn></h1>
-            </font>
-
-            <aside>
-                
-                <table border="0" cellpadding="10">
-                    <tr>
-                        <td><img src="Assets/img/mail.png"></td><td><address><a href="mailto: salakshanamanoji@gmail.com">salakshanamanoji@gmail.com</a></address></td>
-                    </tr>
-                    <tr>
-                        <td><img src="Assets/img/whatsapp.png"></td><td><address><a href="tel: 0763704725">0763704725</a></address></td>
-                    </tr>
-                    <tr>
-                        <td><img src="Assets/img/location%20icon%201.png"></td><td><address><a href="#182/6, Kanampitiya road, Galle">Galle</a></address></td>
-                    </tr>
-                </table>
-                
-<!--                <address><a href="mailto: salakshanamanoji@gmail.com">salakshanamanoji</a></address>-->
-<!--                <address><a href="tel: 0763704725">0763704725</a></address>-->
-<!--                <address><a href="DSC_0525.JPG" download="m.jpg">bnk</a></address>-->
-            </aside>
-        </section>
-    </footer>
-
 </main>
-</body>
 
+<footer>
+    <p>Developed By Manoji Salakshana</p>
+</footer>
+
+</body>
 </html>
+
+
+            <!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+
+<!--<head>-->
+<!--    <title>My Web Page | Title</title>-->
+<!--    <meta charset="UTF-8">-->
+<!--    &lt;!&ndash;    <base href="localhost">&ndash;&gt;-->
+<!--    <meta name="viewport" content="width=device-width initial-scale=1">-->
+<!--    <meta name="keywords" content="IJSE, GDSE, Sri Lanka, CMJD, RWAD">-->
+<!--    <meta name="description" content="This is for testing my web">-->
+<!--    <meta name="author" content="Manoji Salakshana">-->
+<!--    <meta name="owner" content="Manoji Salaskahana">-->
+<!--    <meta name="theme-color" content="blue">-->
+<!--    <link rel="stylesheet" href="../../normalize.css">-->
+
+<!--    <style>-->
+<!--        header{-->
+<!--            background: gray;-->
+<!--            position: fixed;-->
+<!--            border: gray;-->
+<!--            top: 0;-->
+<!--            width: 1550px;-->
+<!--            z-index: 3;-->
+<!--        }-->
+<!--        header>nav>ul{-->
+<!--            position: absolute;-->
+<!--            right: 35px;-->
+<!--            top: 10px;-->
+<!--        }-->
+
+<!--        header>nav>ul>li{-->
+<!--            display: inline-block;-->
+<!--            margin-left: 20px;-->
+<!--            margin-right: 10px;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+
+<!--<body>-->
+<!--<header>-->
+<!--    <nav>-->
+<!--        <ul>-->
+<!--            <li><a href="#"> Home</a></li>-->
+<!--            <li><a href="#"> About</a></li>-->
+<!--            <li><a href="#"> Education</a></li>-->
+<!--            <li><a href="#"> Skills</a></li>-->
+<!--            <li><a href="#"> Projects</a></li>-->
+<!--            <li><a href="#"> Contact</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+<!--</header>-->
+
+<!--&lt;!&ndash;<main>&ndash;&gt;-->
+<!--&lt;!&ndash;    <section>&ndash;&gt;-->
+<!--&lt;!&ndash;        <article>&ndash;&gt;-->
+<!--&lt;!&ndash;            <aside>&ndash;&gt;-->
+<!--&lt;!&ndash;                <img src="Assets/img/group1.png" alt="Couldn't load image" width="750" height="670" align="left"><br>&ndash;&gt;-->
+<!--&lt;!&ndash;                <br>&ndash;&gt;-->
+<!--&lt;!&ndash;            </aside>&ndash;&gt;-->
+<!--&lt;!&ndash;            <br><br><br><br><br><br><br><br>&ndash;&gt;-->
+<!--&lt;!&ndash;            <br>&ndash;&gt;-->
+<!--&lt;!&ndash;            <font face="Josefin Sans" size="100" color="#8a2be2"><b>Hello<br>I'm Manoji</b></font>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <h4>I am not a product of my circumstance.I am <br> a product of my decision<br></h4>&ndash;&gt;-->
+<!--&lt;!&ndash;            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>&ndash;&gt;-->
+<!--&lt;!&ndash;        </article>&ndash;&gt;-->
+<!--&lt;!&ndash;    </section>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <section>&ndash;&gt;-->
+<!--&lt;!&ndash;        <section>&ndash;&gt;-->
+<!--&lt;!&ndash;            <font color="#8a2be2">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h1 align="center"><dfn id="about"><font size="7"><b>About me</b></font></dfn></h1>&ndash;&gt;-->
+<!--&lt;!&ndash;            </font>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <p align="center">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img src="Assets/img/Working1.png">&ndash;&gt;-->
+<!--&lt;!&ndash;            </p>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <table border="0" align="right" cellpadding="5">&ndash;&gt;-->
+<!--&lt;!&ndash;                <tr><td><a href="https://www.instagram.com/manojisalakshana/" target="_blank"><img src="Assets/img/instagram.png" align="right"></a></td></tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                <tr><td><a href="https://www.facebook.com/manoji.salakshana.1" target="_blank"><img src="Assets/img/facebook.png" align="right"></a></td></tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                <tr><td><a href="https://www.linkedin.com/in/manoji-salakshana-969ab01b7/" target="_blank"><img src="Assets/img/linkedin.png" align="right"></a></td></tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                <tr><td><img src="Assets/img/twitter.png" align="right"></td></tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                <tr><td><a href="https://github.com/manojiS02" target="_blank"><img src="Assets/img/github.png" align="right"></a></td></tr>&ndash;&gt;-->
+<!--&lt;!&ndash;            </table>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <article>&ndash;&gt;-->
+<!--&lt;!&ndash;                <b><font face="Josefin Sans" size="4"><font color="#8a2be2">M</font>y name is Manoji Salakshana. <font color="#8a2be2">I</font>'m first year student in <br>&ndash;&gt;-->
+<!--&lt;!&ndash;                    IJSE(Institue of Java Software Engineering). <font color="#8a2be2">I</font>'m currently <br>&ndash;&gt;-->
+<!--&lt;!&ndash;                    more about software engineering, web <br>&ndash;&gt;-->
+<!--&lt;!&ndash;                    development and internet technologies. <font color="#8a2be2">I</font> like to improve my <br>&ndash;&gt;-->
+<!--&lt;!&ndash;                    with working on projects. <font color="#8a2be2">A</font>lso I have knowledge about <br>&ndash;&gt;-->
+<!--&lt;!&ndash;                    web application designing, UI/Ux design and javaFX.</font></b>&ndash;&gt;-->
+<!--&lt;!&ndash;            </article>&ndash;&gt;-->
+<!--&lt;!&ndash;            <article>&ndash;&gt;-->
+<!--&lt;!&ndash;                <h4>Name : U.K.Manoji Salakshana </h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                <h4>Age : 21 </h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                <h4>City : Galle </h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                <h4>Study : Institute of Java Software Engineering </h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                <h4>Degree : Graduate Diploma in Software Engineering.</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;            </article>&ndash;&gt;-->
+<!--&lt;!&ndash;        </section>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    </section>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <section>&ndash;&gt;-->
+<!--&lt;!&ndash;        <article>&ndash;&gt;-->
+<!--&lt;!&ndash;            <font color="#8a2be2">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h1 align="center"><dfn id="education"><font size="7"><b>Education</b></font></dfn></h1>&ndash;&gt;-->
+<!--&lt;!&ndash;            </font>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <p align="center">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img src="Assets/img/School1.png">&ndash;&gt;-->
+<!--&lt;!&ndash;            </p>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <table width="20%" height="60px" bgcolor="6103BE" border="0" align="left"><tr><td align="center"><font color="#f8f8ff" size="5">School Study</font></td></tr></table>&ndash;&gt;-->
+<!--&lt;!&ndash;            <table width="40%" height="70px" bgcolor="black" border="0" cellpadding="20"><tr><td align="left"><font color="#f8f8ff" size="5">(2007-2020)<br>Southlands college, Galle.</font></td></tr></table><br>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <table width="20%" height="60px" bgcolor="6103BE" border="0" align="left"><tr><td align="center"><font color="#f8f8ff" size="5">School Study</font></td></tr></table>&ndash;&gt;-->
+<!--&lt;!&ndash;            <table width="40%" height="70px" bgcolor="black" border="0" cellpadding="20"><tr><td align="left"><font color="#f8f8ff" size="5">O/L(2018)<br>Southlands college, Galle.</font></td></tr></table><br>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <table width="20%" height="60px" bgcolor="6103BE" border="0" align="left"><tr><td align="center"><font color="#f8f8ff" size="5">School Study</font></td></tr></table>&ndash;&gt;-->
+<!--&lt;!&ndash;            <table width="40%" height="70px" bgcolor="black" border="0" cellpadding="20"><tr><td align="left"><font color="#f8f8ff" size="5">A/L(2020)<br>Southlands college, Galle.</font></td></tr></table><br>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <table width="20%" height="60px" bgcolor="6103BE" border="0" align="left"><tr><td align="center"><font color="#f8f8ff" size="5">Advanced Certificate in English Language</font></td></tr></table>&ndash;&gt;-->
+<!--&lt;!&ndash;            <table width="40%" height="70px" bgcolor="black" border="0" cellpadding="20"><tr><td align="left"><font color="#f8f8ff" size="5">2021<br>NIBM - National Institute of Business Management</font></td></tr></table><br>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <table width="20%" height="60px" bgcolor="6103BE" border="0" align="left"><tr><td align="center"><font color="#f8f8ff" size="5">Graduate Diploma in Software Engineering</font></td></tr></table>&ndash;&gt;-->
+<!--&lt;!&ndash;            <table width="40%" height="70px" bgcolor="black" border="0" cellpadding="20"><tr><td align="left"><font color="#f8f8ff" size="5">2022 present<br>IJSE - Institute of Java Software Engineering</font></td></tr></table><br>&ndash;&gt;-->
+<!--&lt;!&ndash;        </article>&ndash;&gt;-->
+<!--&lt;!&ndash;    </section>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <section>&ndash;&gt;-->
+<!--&lt;!&ndash;        <font color="#8a2be2">&ndash;&gt;-->
+<!--&lt;!&ndash;            <h1 align="center"><dfn id="skills"><font size="7"><b>Skills</b></font></dfn></h1>&ndash;&gt;-->
+<!--&lt;!&ndash;        </font>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <section>&ndash;&gt;-->
+<!--&lt;!&ndash;            <font color="#8a2be2" size="5">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h3>Programminng Languages I Use</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;            </font>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <table border="0" align="center">&ndash;&gt;-->
+<!--&lt;!&ndash;                <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <td><img src="Assets/img/html.png"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <td><img src="Assets/img/css.png"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <td><img src="Assets/img/java%201.png"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <td><img src="Assets/img/python%201.png"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <td><img src="Assets/img/sql%201.png"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;                </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;            </table>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        </section>&ndash;&gt;-->
+<!--&lt;!&ndash;        <section>&ndash;&gt;-->
+<!--&lt;!&ndash;            <font color="#8a2be2" size="5">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h3>Programming Softwares I Use</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;            </font>&ndash;&gt;-->
+<!--&lt;!&ndash;            <table border="0" align="center">&ndash;&gt;-->
+<!--&lt;!&ndash;                <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <td><img src="Assets/img/hibernate%201.png"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <td><img src="Assets/img/intellij%201.png"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <td><img src="Assets/img/NetBeans_Logo%201.png"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <td><img src="Assets/img/sql%202.png"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;                </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;            </table>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        </section>&ndash;&gt;-->
+<!--&lt;!&ndash;    </section>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <section>&ndash;&gt;-->
+<!--&lt;!&ndash;        <article>&ndash;&gt;-->
+<!--&lt;!&ndash;            <font color="#8a2be2">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h1 align="center"><dfn id="projects"><font size="7"><b>Projects</b></font></dfn></h1>&ndash;&gt;-->
+<!--&lt;!&ndash;            </font>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        </article>&ndash;&gt;-->
+<!--&lt;!&ndash;    </section>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <footer>&ndash;&gt;-->
+<!--&lt;!&ndash;        <section>&ndash;&gt;-->
+<!--&lt;!&ndash;            <font color="#8a2be2">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h1 align="left"><dfn id="contact"><font size="7"><b>Let's work<br>together</b></font></dfn></h1>&ndash;&gt;-->
+<!--&lt;!&ndash;            </font>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <aside>&ndash;&gt;-->
+<!--&lt;!&ndash;                &ndash;&gt;-->
+<!--&lt;!&ndash;                <table border="0" cellpadding="10">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <td><img src="Assets/img/mail.png"></td><td><address><a href="mailto: salakshanamanoji@gmail.com">salakshanamanoji@gmail.com</a></address></td>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <td><img src="Assets/img/whatsapp.png"></td><td><address><a href="tel: 0763704725">0763704725</a></address></td>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <td><img src="Assets/img/location%20icon%201.png"></td><td><address><a href="#182/6, Kanampitiya road, Galle">Galle</a></address></td>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;                </table>&ndash;&gt;-->
+<!--&lt;!&ndash;                &ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                <address><a href="mailto: salakshanamanoji@gmail.com">salakshanamanoji</a></address>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                <address><a href="tel: 0763704725">0763704725</a></address>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                <address><a href="DSC_0525.JPG" download="m.jpg">bnk</a></address>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;            </aside>&ndash;&gt;-->
+<!--&lt;!&ndash;        </section>&ndash;&gt;-->
+<!--&lt;!&ndash;    </footer>&ndash;&gt;-->
+
+<!--&lt;!&ndash;</main>&ndash;&gt;-->
+<!--</body>-->
+
+<!--</html>-->
