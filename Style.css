@@ -193,10 +193,10 @@ span:nth-child(2) {
 #about1>b>b:nth-child(3){
     color: mediumpurple;
 }
-#about1>b>b:nth-child(4){
+#about1>b>b:nth-child(7){
     color: mediumpurple;
 }
-#about1>b>b:nth-child(5){
+#about1>b>b:nth-child(9){
     color: mediumpurple;
 }
 
@@ -244,6 +244,8 @@ span:nth-child(2) {
     box-shadow: 5px 10px 20px rgba(150, 150, 150, .3);
     transition: all .3s ease-out;
 }
+
+
 .icon:hover{
     width: 200px;
     cursor: pointer;
@@ -309,9 +311,10 @@ span:nth-child(2) {
     width: 30%;
 }
 
-.black{
+/*education eke thyena dam pata kotu tika mekai yata ekai*/
+.purple{
     position: absolute;
-    left: 5%;
+    left: 6%;
     top: 220%;
     width: 80px;
 
@@ -322,19 +325,47 @@ span:nth-child(2) {
 .std{
     width: 300px;
     height: 60px;
-    border : black;
-    background: black;
-    margin: 10px;
+    border : #6103BE;
+    background: #6103BE;
+    margin: 20px;
     text-align: center;
 
     font-size: 25px;
     /*line-height: 50px;*/
     font-family: sans-serif;
     color: white;
+    opacity: 75%;
+
+}
+
+/*education eke thyena kalu pata kotu tika mekai yata ekai*/
+.black{
+    position: absolute;
+    left: 25.6%;
+    top: 220%;
+    width: 85px;
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(1,1fr)
+}
+.scl{
+    width: 600px;
+    height: 60px;
+    border : black;
+    background: black;
+    margin: 20px;
+    text-align: left;
+
+    font-size: 25px;
+    /*line-height: 50px;*/
+    font-family: sans-serif;
+    color: white;
+    opacity: 75%;
 
 
 }
 
+/*Skills kiyana topic eka*/
 #skills>b{
     position: absolute;
     font-family: 'Poppins', sans-serif;
@@ -350,7 +381,20 @@ span:nth-child(2) {
     margin-right: auto;
     width: 30%;
 }
-
+.languages>b{
+    color: #6103BE;
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+    top: 310%;
+    left: 20%;
+}
+.software>b{
+    color: #6103BE;
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+    top: 330%;
+    left: 20%;
+}
 #projects>b{
     position: absolute;
     font-family: 'Poppins', sans-serif;
@@ -358,6 +402,15 @@ span:nth-child(2) {
     color: #6103BE;
     top: 405%;
     left: 40%;
+}
+
+#contact>b{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    color: #6103BE;
+    top: 505%;
+    left: 43%;
 }
 
 footer{
