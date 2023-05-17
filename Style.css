@@ -483,19 +483,20 @@ span:nth-child(2) {
 .contactdetails{
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
-    left: 20%;
+    left: 40%;
     position: absolute;
 }
 
 .ic{
-    width: 50px;
+    width: 800px;
     height: 50px;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 80px;
     font-family: sans-serif;
-    position: absolute;
+    position: relative;
 
 }
+
 
 footer{
     background-color: black;
