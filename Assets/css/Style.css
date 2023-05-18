@@ -494,6 +494,10 @@ span:nth-child(2) {
     border: 0;
 }
 
+.grid>div>h1{
+    margin-left: 100px;
+}
+
 .grid>div:nth-child(1){
     align-items: center;
 }
