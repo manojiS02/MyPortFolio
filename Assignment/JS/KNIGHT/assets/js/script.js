@@ -1,5 +1,7 @@
+
+
 let colors = ["#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", '#FFBABA', "#FF5252", "#FF0000", "#A70000"];
-let colors2 = ["#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", '#A70000', "#FF0000", "#FF5252", "#FFBABA"];
+let colors2 = [ "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF","#FFFFFF" , '#A70000', "#FF0000", "#FF5252", "#FFBABA"];
 let section = document.querySelector("section");
 let divArray = section.getElementsByTagName("div");
 let count = 0;
