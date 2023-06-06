@@ -1,0 +1,35 @@
+/*body {*/
+/*    background-color: black;*/
+/*}*/
+h1{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-align: center;
+    margin-top: 200px;
+}
+section {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1000px;
+    height: 70px;
+    display: flex;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+section div {
+    height: 100%;
+    width: 200px;
+}
+button {
+    width: 120px;
+    position: relative;
+    margin-left: 20px;
+    top: 15rem;
+    left: 37rem;
+}
