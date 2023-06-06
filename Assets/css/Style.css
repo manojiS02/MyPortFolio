@@ -266,7 +266,9 @@ span:nth-child(2) {
 }
 .fb:hover{
     background: royalblue;
+    color: white;
 }
+
 
 /*yata 2 twitter icon ekata*/
 .icon:hover i{
