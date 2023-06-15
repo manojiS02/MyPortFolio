@@ -10,8 +10,10 @@ html {
     box-sizing: inherit;
 }
 #calcScreen{
-    position: relative;
-    top: 175px !important;
+    position: absolute;
+    left: 35%;
+    right: 35%;
+    top: 140px !important;
 }
 .calculator card{
     border: 1px solid #ccc;
