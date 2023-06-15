@@ -47,10 +47,11 @@ document.querySelector("#start-btn").addEventListener('click', function () {
     Rider();
 });
 
-// Get a reference to the audio element
-const soundtrack = document.getElementById('soundtrack');
+// Get the audio element
+var soundtrack = document.getElementById('soundtrack');
 
 // Play the soundtrack when the page loads
-window.addEventListener('load', () => {
+window.addEventListener('load', function() {
     soundtrack.play();
 });
+
