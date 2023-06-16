@@ -40,6 +40,8 @@ function Rider() {
         }
     }, 100);
 }
+
+
 document.querySelector("#stop-btn").addEventListener('click', function () {
     clearInterval(interval);
 });
@@ -47,11 +49,5 @@ document.querySelector("#start-btn").addEventListener('click', function () {
     Rider();
 });
 
-// Get the audio element
-var soundtrack = document.getElementById('soundtrack');
 
-// Play the soundtrack when the page loads
-window.addEventListener('load', function() {
-    soundtrack.play();
-});
 

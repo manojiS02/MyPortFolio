@@ -5,15 +5,16 @@
     <title>POS</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="assets/css/normalize.css">
 </head>
 <body class="container-fluid">
 <main id="Home">
     <!--Header-->
     <header id="headerSection">
-        <nav class="navbar navbar-expand-lg"style="background: #065606;">
+        <nav class="navbar navbar-expand-lg"style="background: #348ee3;">
             <div class="container-fluid">
                 <a class="navbar-brand fw-bold text-danger" href="#">
-                    <img src="assets/img/cart%20logo.png" alt="Bootstrap" width="30" height="24"> POS System
+                    <img src="assets/img/free-store-icon-2017-thumb.png" alt="Bootstrap" width="30" height="24"> POS System
                 </a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -47,7 +48,7 @@
                         <form class="d-flex" role="search">
                             <!-- Example single danger button -->
                             <div class="btn-group mx-2">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background: #058105;">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background: #6d6d6e;">
                                     ID
                                 </button>
                                 <ul class="dropdown-menu">
@@ -88,19 +89,19 @@
                 <form id="item-form px-2" >
                     <div class="m-3">
                         <label for="txtCustID" class="form-label">Customer ID</label>
-                        <input type="text" class="form-control " placeholder="C001" id="txtCustID">
+                        <input type="text" class="form-control " placeholder="Ex: C001" id="txtCustID">
                     </div>
                     <div class="m-3">
                         <label for="txtCustName" class="form-label">Customer Name</label>
-                        <input type="text" class="form-control" placeholder="Nethmi" id="txtCustName" >
+                        <input type="text" class="form-control" placeholder="Ex: Manoji" id="txtCustName" >
                     </div>
                     <div class="m-3">
                         <label for="txtCustAddress" class="form-label">Customer address</label>
-                        <input type="text" class="form-control" placeholder="Galle" id="txtCustAddress" >
+                        <input type="text" class="form-control" placeholder="Ex: Galle" id="txtCustAddress" >
                     </div>
                     <div class="m-3">
                         <label for="txtCustSalary" class="form-label">Customer Salary</label>
-                        <input type="text" class="form-control" placeholder="35000.00" id="txtCustSalary" >
+                        <input type="text" class="form-control" placeholder="Ex: 35000.00" id="txtCustSalary" >
                     </div>
                     <div class="m-3 justify-content-center">
                         <div style="display: inline-block" class="me-2">
@@ -134,7 +135,7 @@
                         <form class="d-flex" role="search">
                             <!-- Example single danger button -->
                             <div class="btn-group mx-2">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"style="background: #058105;">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"style="background: #6d6d6e;">
                                     Code
                                 </button>
                                 <ul class="dropdown-menu">
@@ -175,19 +176,19 @@
                 <form id="itemform px-2" >
                     <div class="m-3">
                         <label for="txtItemCode" class="form-label">Item Code</label>
-                        <input type="text" class="form-control " placeholder="I001" id="txtItemCode">
+                        <input type="text" class="form-control " placeholder="Ex: I001" id="txtItemCode">
                     </div>
                     <div class="m-3">
                         <label for="txtItemName" class="form-label">Item Name</label>
-                        <input type="text" class="form-control" placeholder="Sugar" id="txtItemName" >
+                        <input type="text" class="form-control" placeholder="Ex: Sugar" id="txtItemName" >
                     </div>
                     <div class="m-3">
                         <label for="txtItemPrice" class="form-label">Item Price</label>
-                        <input type="text" class="form-control" placeholder="350.00" id="txtItemPrice" >
+                        <input type="text" class="form-control" placeholder="Ex: 350.00" id="txtItemPrice" >
                     </div>
                     <div class="m-3">
-                        <label for="txtQty" class="form-label">Item uantity on Hand</label>
-                        <input type="text" class="form-control" placeholder="35000.00" id="txtQty" >
+                        <label for="txtQty" class="form-label">Item quantity on Hand</label>
+                        <input type="text" class="form-control" placeholder="Ex: 35000" id="txtQty" >
                     </div>
                     <div class="m-3 justify-content-center">
                         <div style="display: inline-block" class="me-2">
@@ -344,27 +345,6 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <!--          <tr>-->
-                    <!--            <td>I-001</td>-->
-                    <!--            <td>Rice 2kg</td>-->
-                    <!--            <td>300.00</td>-->
-                    <!--            <td>3</td>-->
-                    <!--            <td>900.00</td>-->
-                    <!--          </tr>-->
-                    <!--          <tr>-->
-                    <!--            <td>I-002</td>-->
-                    <!--            <td>Soap</td>-->
-                    <!--            <td>250.00</td>-->
-                    <!--            <td>4</td>-->
-                    <!--            <td>1000.00</td>-->
-                    <!--          </tr>-->
-                    <!--          <tr>-->
-                    <!--            <td>I-003</td>-->
-                    <!--            <td>Biscuits</td>-->
-                    <!--            <td>100.00</td>-->
-                    <!--            <td>12</td>-->
-                    <!--            <td>1200.00</td>-->
-                    <!--          </tr>-->
                     </tbody>
                 </table>
             </div>
@@ -374,6 +354,10 @@
 <script src="assets/js/jquery-3.7.0.min.js"></script>
 <script>
     $(document).ready(function () {
+        // Save button click event
+        $("#savebtn").click(function () {
+            saveCustomer();
+        });
         // Save Customer Button Click Event
         $("#save-btn").click(function () {
             // Get input field values
@@ -388,6 +372,7 @@
             row.append($("<td>").text(name));
             row.append($("<td>").text(address));
             row.append($("<td>").text(salary));
+
 
             // Append row to table body
             $("#tblCustomer").append(row);
@@ -418,36 +403,187 @@
             $("#txtCustAddress").val(address);
             $("#txtCustSalary").val(salary);
         });
-    });
 
-    //select the button and add an event to Item
-    $("#savebtn").click(function () {
-        //get typed values of input fields
-        let code = $("#txtItemCode").val();
-        let name = $("#txtItemName").val();
-        let price = $("#txtItemPrice").val();
-        let qty = $("#txtQty").val();
-        //let's print it
-        console.log(code, name, price, qty);
-        //catch the table body
-        let tBody = $("#tblItem");
-        // let's see how we should insert a table row using html format
-        //ok then, let's create the above row
-        let tr = $("<tr>");
-        //let's create another four columns
-        let col1 = $("<td>").text(code);
-        let col2 = $("<td>").text(name);
-        let col3 = $("<td>").text(price);
-        let col4 = $("<td>").text(qty);
-        //set 4 columns to the previously created row
-        tr.append(col1);
-        tr.append(col2);
-        tr.append(col3);
-        tr.append(col4);
-        //set the row to the table body
-        tBody.append(tr);
-        //Work done;
-    });
+        // Update Button Click Event
+        $("#updated-btn").click(function () {
+            // Get input field values
+            let id = $("#txtCustID").val();
+            let name = $("#txtCustName").val();
+            let address = $("#txtCustAddress").val();
+            let salary = $("#txtCustSalary").val();
+
+            // Find the row with the selected class
+            let selectedRow = $("#tblCustomer tr.selected");
+
+            // Update the data in the selected row
+            selectedRow.find("td:eq(0)").text(id);
+            selectedRow.find("td:eq(1)").text(name);
+            selectedRow.find("td:eq(2)").text(address);
+            selectedRow.find("td:eq(3)").text(salary);
+
+            // Clear form inputs
+            $("#txtCustID").val("");
+            $("#txtCustName").val("");
+            $("#txtCustAddress").val("");
+            $("#txtCustSalary").val("");
+
+            // Remove the selected class from the row
+            selectedRow.removeClass("selected");
+        });
+
+        // Delete Button Click Event
+        $("#delete-btn").click(function () {
+            // Find the row with the selected class
+            let selectedRow = $("#tblCustomer tr.selected");
+
+            // Remove the selected row
+            selectedRow.remove();
+
+            // Clear form inputs
+            $("#txtCustID").val("");
+            $("#txtCustName").val("");
+            $("#txtCustAddress").val("");
+            $("#txtCustSalary").val("");
+        });
+
+        function clearCustomerFields() {
+            $('#txtCustID').val("");
+            $('#txtCustName').val("");
+            $('#txtCustAddress').val("");
+            $('#txtCustSalary').val("");
+        }
+        $("#clear-btn").click(function(){
+            clearCustomerFields();
+        })
+
+        //select the button and add an event to Item
+
+
+
+        // Save button click event
+        $("#savebtn").click(function () {
+            // Get typed values of input fields
+            let code = $("#txtItemCode").val();
+            let name = $("#txtItemName").val();
+            let price = $("#txtItemPrice").val();
+            let qty = $("#txtQty").val();
+
+            // Create a new row with the values
+            let row = $("<tr>");
+            row.append($("<td>").text(code));
+            row.append($("<td>").text(name));
+            row.append($("<td>").text(price));
+            row.append($("<td>").text(qty));
+
+            // Append row to table body
+            $("#tblItem").append(row);
+
+            // Clear form inputs
+            $("#txtItemCode").val("");
+            $("#txtItemName").val("");
+            $("#txtItemPrice").val("");
+            $("#txtQty").val("");
+        });
+
+        // Update button click event
+        $("#updatedbtn").click(function () {
+            // Get the selected row
+            let selectedRow = $("#tblItem tr.selected");
+
+            // Check if a row is selected
+            if (selectedRow.length > 0) {
+                // Get the values from the form inputs
+                let code = $("#txtItemCode").val();
+                let name = $("#txtItemName").val();
+                let price = $("#txtItemPrice").val();
+                let qty = $("#txtQty").val();
+
+                // Update the selected row with the new values
+                selectedRow.children().eq(0).text(code);
+                selectedRow.children().eq(1).text(name);
+                selectedRow.children().eq(2).text(price);
+                selectedRow.children().eq(3).text(qty);
+
+                // Clear form inputs
+                $("#txtItemCode").val("");
+                $("#txtItemName").val("");
+                $("#txtItemPrice").val("");
+                $("#txtQty").val("");
+
+                // Remove the selected class from the row
+                selectedRow.removeClass("selected");
+            }
+        });
+
+        // Delete button click event
+        $("#deletebtn").click(function () {
+            // Get the selected row
+            let selectedRow = $("#tblItem tr.selected");
+
+            // Check if a row is selected
+            if (selectedRow.length > 0) {
+                // Remove the selected row
+                selectedRow.remove();
+
+                // Clear form inputs
+                $("#txtItemCode").val("");
+                $("#txtItemName").val("");
+                $("#txtItemPrice").val("");
+                $("#txtQty").val("");
+            }
+        });
+
+        $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").keydown(function (e) {
+            if (e.key == "Tab") {
+                e.preventDefault();
+            }
+        });
+        $("#txtCustomerID").keydown(function (e) {
+            if (e.key == "Enter") {
+                $("#txtCustomerName").focus();
+            }
+        });
+        $("#txtCustomerName").keydown(function (e) {
+            if (e.key == "Enter") {
+                $("#txtCustomerAddress").focus();
+            }
+        });
+        $("#txtCustomerAddress").keydown(function (e) {
+            if (e.key == "Enter") {
+                $("#txtCustomerSalary").focus();
+            }
+        });
+        $("#txtCustomerSalary").keydown(function (e) {
+            if (e.key == "Enter") {
+                //save customer
+                saveCustomer();
+            }
+        });
+
+
+
+        // Table Row Click Event
+        $("#tblItem").on("click", "tr", function () {
+            // Remove the selected class from all rows
+            $("#tblItem tr").removeClass("selected");
+
+            // Add the selected class to the clicked row
+            $(this).addClass("selected");
+
+            // Load data from the selected row into the form inputs
+            let code = $(this).children().eq(0).text();
+            let name = $(this).children().eq(1).text();
+            let price = $(this).children().eq(2).text();
+            let qty = $(this).children().eq(3).text();
+
+            $("#txtItemCode").val(code);
+            $("#txtItemName").val(name);
+            $("#txtItemPrice").val(price);
+            $("#txtQty").val(qty);
+        });
+
+        });
+
 </script>
 </body>
 </html>
