@@ -1,0 +1,33 @@
+/*Laptop L= 1440*/
+@media all and (max-width: 1440px) {
+
+
+}
+
+/*Laptop= 1024*/
+@media all and (max-width: 1024px) {
+
+
+}
+
+/*Tablet= 768*/
+@media all and (max-width: 768px) {
+
+
+}
+
+/*Mobile L= 425*/
+@media all and (max-width: 425px) {
+
+
+}
+
+/*Mobile M= 375*/
+@media all and (max-width: 375px) {
+
+}
+
+/*Mobile S= 320*/
+@media all and (max-width: 320px) {
+
+}
