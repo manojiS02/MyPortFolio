@@ -2,6 +2,16 @@
 
 <img align="center" alt="coding" src="https://github.com/manojiS02/MyPortFolio/blob/master/Assets/img/Frame%208.png" height="500" width="830">
 
+<h3>Technology & Frameworks</h3>
+
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JS</li>
+  <li>Bootstrap</li>
+  <li>Jquery</li>
+</ul>
+
 Site Map URL :- https://drive.google.com/file/d/1oPHd7s_TOglyPYO8lxyW-g6-DtgDLCyq/view?usp=sharing  <br>
 
 Wire-frame URL:- https://drive.google.com/file/d/1j-_QL71iRpij6NkWGSDyTgSvRT8AOR0C/view?usp=sharing <br>
